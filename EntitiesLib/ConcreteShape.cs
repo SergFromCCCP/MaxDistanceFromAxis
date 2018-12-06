@@ -21,7 +21,10 @@ namespace EntitiesLib
         public PointF GetMaxDistance(PointF point)
         {
             var corners = baseShape.GetCorners(parameters.Rotate).Select(c => c.PlusPoint(parameters.Location));
-            var max = new PointF(corners.Max(c => c.X-point.X), corners.Max(c => c.Y-point.Y));
+            var max = new PointF(
+                corners.Max(c => Math.Abs(c.X - point.X)), 
+                corners.Max(c => Math.Abs(c.Y - point.Y))
+                );
             return max;
         }
 

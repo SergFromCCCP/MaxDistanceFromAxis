@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseRectangle.cs" />
+    <Compile Include="BaseSector.cs" />
     <Compile Include="BaseShape.cs" />
+    <Compile Include="BaseTriangle.cs" />
     <Compile Include="ConcreteParameters.cs" />
     <Compile Include="ConcreteShape.cs" />
     <Compile Include="IMaxDistance.cs" />
