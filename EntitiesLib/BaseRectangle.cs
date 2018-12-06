@@ -27,5 +27,15 @@ namespace EntitiesLib
         {
             return $"{base.ToString()}: width={Width}, height={Height}";
         }
+
+        public override List<PointF> GetCorners(float angle)
+        {
+            return new List<PointF> {
+                new PointF(0,0),
+                new PointF(0,Height),
+                new PointF(Width,0),
+                new PointF(Width,Height)
+            }.Select(c => c.Rotate(angle)).ToList();
+        }
     }
 }

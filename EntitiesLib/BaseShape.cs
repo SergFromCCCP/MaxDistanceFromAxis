@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace EntitiesLib
         public abstract double Area { get; }
         public abstract System.Drawing.PointF Center { get; }
 
+        public abstract List<PointF> GetCorners(float rotate);
+
         public override string ToString()
         {
             return Name;
@@ -28,6 +31,7 @@ namespace EntitiesLib
     {
         double Area { get; }
         System.Drawing.PointF Center { get; }
+        List<System.Drawing.PointF> GetCorners(float angle);
 
     }
 }
