@@ -26,12 +26,4 @@ namespace EntitiesLib
             return Name;
         }
     }
-
-    public interface IBaseShape
-    {
-        double Area { get; }
-        System.Drawing.PointF Center { get; }
-        List<System.Drawing.PointF> GetCorners(float angle);
-
-    }
 }

@@ -42,15 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseRectangle.cs" />
-    <Compile Include="BaseSector.cs" />
-    <Compile Include="BaseShape.cs" />
-    <Compile Include="BaseTriangle.cs" />
-    <Compile Include="ConcreteParameters.cs" />
-    <Compile Include="ConcreteShape.cs" />
-    <Compile Include="IMaxDistance.cs" />
+    <Compile Include="BaseShapes\BaseRectangle.cs" />
+    <Compile Include="BaseShapes\BaseSector.cs" />
+    <Compile Include="BaseShapes\Implements\BaseShape.cs" />
+    <Compile Include="BaseShapes\BaseTriangle.cs" />
+    <Compile Include="ConcreteShapes\ConcreteParameters.cs" />
+    <Compile Include="ConcreteShapes\ConcreteShape.cs" />
+    <Compile Include="BaseShapes\Implements\IBaseShape.cs" />
+    <Compile Include="ConcreteShapes\IMaxDistance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RotateHelpers.cs" />
+    <Compile Include="Helpers\RotateHelpers.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
